@@ -15,5 +15,14 @@
     "dialect": "postgres",
     "operationAliases": false,
     "logging": false
+  },
+  "production": {
+    "username": "api_user_1",
+    "password": "password",
+    "database": "adv_books_api_21_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operationAliases": false,
+    "logging": false
   }
 }

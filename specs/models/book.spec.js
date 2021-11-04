@@ -1,9 +1,10 @@
-const { expect, factory, pending } = require("../helpers");
+const { pending } = require("../helpers");
+const { Book } = Models;
 const { Association, DataTypes } = require("sequelize");
 
-describe("ModelName", () => {
-  BookModel = factory.factories.Book.Model;
-  const { tableName, tableAttributes, associations } = BookModel;
+describe("Book", () => {
+  BookModel = new Book();
+  const { tableName, tableAttributes, associations } = BookModel.constructor;
 
   beforeEach(async () => {
     subject = await factory.create("Book");
@@ -11,6 +12,7 @@ describe("ModelName", () => {
 
   describe("Model", () => {
     it('is expected to have table name "Books', () => {
+      
       expect(tableName).to.equal("Books");
     });
 
