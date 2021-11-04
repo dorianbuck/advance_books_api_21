@@ -1,4 +1,4 @@
-const { pending } = require("../helpers");
+
 const { Book } = Models;
 const { Association, DataTypes } = require("sequelize");
 
@@ -11,8 +11,7 @@ describe("Book", () => {
   });
 
   describe("Model", () => {
-    it('is expected to have table name "Books', () => {
-      
+    it('is expected to have table name "Books', () => {      
       expect(tableName).to.equal("Books");
     });
 
