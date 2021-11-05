@@ -17,6 +17,7 @@
     "logging": false
   },
   "production": {
+    "use_env_variable": "DATABASE_URL",
     "username": "api_user_1",
     "password": "password",
     "database": "adv_books_api_21_test",
